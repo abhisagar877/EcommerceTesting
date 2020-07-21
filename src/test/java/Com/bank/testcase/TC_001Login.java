@@ -12,19 +12,31 @@ public class TC_001Login  extends BaseClass{
 	@Test
 	public void logintest(){
 		//open url
-		driver.get("baseUrl");
+		
+		
+		driver.get(baseURL);
+		logger.info("URl is open");
 		//baseurl in loginpage object
 		//call the loginpage object and pass driver as a parameter
 		Loginpage lp= new Loginpage(driver);
 		//Now write down the Steps 
 		lp.SetUserName(username);
+		logger.info("enter user name");
 		lp.SetPassword(password);
+		
+		logger.info("enter password");
 		lp.clickSubmit();
-		if (driver.getTitle().equals("Guru99bankpage")){
+		
+		logger.info("Submited");
+		
+		if (driver.getTitle().equals("theShpoingWorld")){
 			Assert.assertTrue(true);
+			logger.info("testcase passed");
 		}
 		else{
+			
 			Assert.assertTrue(false);
+			logger.info("test failed");
 		}
 	}
 	

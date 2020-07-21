@@ -21,13 +21,13 @@ public class Loginpage {
 	
 	//identifed the elemnets which present in login page 
 	
-	@FindBy(name="uid")
+	@FindBy(name="email")
 	WebElement txtUserName;
 	
 	@FindBy(name="password")
 	WebElement txtPassword;
 	
-	@FindBy(name="btnLogin")
+	@FindBy(xpath="//*[@id='content']/div/div[2]/div/form/input")
 	WebElement btnLogin;
 
 	

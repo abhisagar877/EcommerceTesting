@@ -1,0 +1,5 @@
+Com\bank\testcase\BaseClass.class
+Com\bank\Utilities\ReadConfig.class
+Com\bank\pageObject\Loginpage.class
+Com\bank\Utilities\Reporting.class
+Com\bank\testcase\TC_001Login.class
